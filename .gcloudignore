@@ -1,0 +1,7 @@
+node_modules/
+# .env removed to allow build-time inclusion
+.git/
+tests/
+dist/
+coverage/
+.DS_Store
