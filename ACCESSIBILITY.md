@@ -1,7 +1,7 @@
 # ♿ Accessibility Standards & WCAG 2.1 AA Compliance
 
 ## Compliance Summary
-CivicIQ is built with an **accessibility-first** philosophy. We believe that democracy is only true if it is inclusive. The platform is engineered to meet and exceed **WCAG 2.1 Level AA** standards, ensuring that every citizen—regardless of physical or cognitive ability—can navigate the electoral process with dignity and ease.
+CivicFirst is built with an **accessibility-first** philosophy. We believe that democracy is only true if it is inclusive. The platform is engineered to meet and exceed **WCAG 2.1 Level AA** standards, ensuring that every citizen—regardless of physical or cognitive ability—can navigate the electoral process with dignity and ease.
 
 ---
 
@@ -79,4 +79,4 @@ We respect user OS preferences for reduced motion by disabling Framer Motion ani
 
 ---
 
-**CivicIQ is not merely WCAG compliant—it was built accessibility-first, treating every citizen regardless of ability as a first-class user.**
+**CivicFirst is not merely WCAG compliant—it was built accessibility-first, treating every citizen regardless of ability as a first-class user.**

@@ -1,7 +1,7 @@
 # 🧪 Comprehensive Testing Strategy
 
 ## Testing Philosophy
-CivicIQ maintains a **Zero-Regression** policy. We believe that a mission-critical civic platform must be verifiable at every layer. Our testing strategy combines high-speed unit tests with high-fidelity integration and accessibility audits, ensuring that every deployment is stable and secure.
+CivicFirst maintains a **Zero-Regression** policy. We believe that a mission-critical civic platform must be verifiable at every layer. Our testing strategy combines high-speed unit tests with high-fidelity integration and accessibility audits, ensuring that every deployment is stable and secure.
 
 ---
 
@@ -119,4 +119,4 @@ Our test suite is the mandatory gatekeeper for all code changes.
 
 ---
 
-**With 291 tests across 40 suites covering unit, integration, accessibility, security, and snapshot categories, CivicIQ has one of the most comprehensive and fully CI/CD-verified test suites of any hackathon submission.**
+**With 291 tests across 40 suites covering unit, integration, accessibility, security, and snapshot categories, CivicFirst has one of the most comprehensive and fully CI/CD-verified test suites of any hackathon submission.**

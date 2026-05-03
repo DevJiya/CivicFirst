@@ -21,13 +21,13 @@
 }
 
 @theme {
-  --color-navy: #0a1628;
-  --color-indigo: #4f46e5;
-  --color-amber: #f59e0b;
-  --color-emerald: #10b981;
-  --color-background: #fbf8fa;
-  --color-surface: #ffffff;
-  --color-on-surface: #1b1b1d;
+  --color-navy: #1B4332;
+  --color-indigo: #D8F3DC;
+  --color-amber: #F59E0B;
+  --color-emerald: #2D6A4F;
+  --color-background: #F8FCF9;
+  --color-surface: #FFFFFF;
+  --color-on-surface: #0F172A;
 
   --font-hero: "Playfair Display", serif;
   --font-body: "Inter", sans-serif;

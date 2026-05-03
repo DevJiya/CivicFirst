@@ -31,7 +31,7 @@ export const About: React.FC = (): React.JSX.Element => {
               <Translate text="Empowering Every Voter" />
             </h1>
             <p className="text-xl text-white/80 leading-relaxed max-w-2xl mx-auto">
-              <Translate text="CivicIQ is a non-partisan platform dedicated to making the complex world of elections simple, accessible, and transparent for everyone." />
+              <Translate text="CivicFirst is a non-partisan platform dedicated to making the complex world of elections simple, accessible, and transparent for everyone." />
             </p>
           </motion.div>
         </section>
@@ -48,7 +48,7 @@ export const About: React.FC = (): React.JSX.Element => {
                 <Translate text="Our Mission" />
               </h2>
               <p className="text-lg text-on-surface/80 mb-6 leading-relaxed">
-                <Translate text="We believe that a healthy democracy depends on an informed electorate. CivicIQ provides clear, factual, and verified information about election processes, helping you navigate the journey from registration to results." />
+                <Translate text="We believe that a healthy democracy depends on an informed electorate. CivicFirst provides clear, factual, and verified information about election processes, helping you navigate the journey from registration to results." />
               </p>
               <div className="space-y-4">
                 {[
@@ -98,7 +98,7 @@ export const About: React.FC = (): React.JSX.Element => {
               <Translate text="Official Alignment & Standards" />
             </h2>
             <p className="text-lg text-on-surface/80 mb-10 leading-relaxed">
-              <Translate text="CivicIQ is built in alignment with the Election Commission of India (ECI) procedures to ensure procedural accuracy. Our platform is strictly compliant with WCAG 2.1 AA standards, ensuring a truly inclusive experience for all users." />
+              <Translate text="CivicFirst is built in alignment with the Election Commission of India (ECI) procedures to ensure procedural accuracy. Our platform is strictly compliant with WCAG 2.1 AA standards, ensuring a truly inclusive experience for all users." />
             </p>
             <div className="flex flex-wrap justify-center gap-4">
               <div className="inline-flex items-center gap-2 px-6 py-3 bg-white rounded-full border border-navy/10 shadow-sm">

@@ -48,7 +48,7 @@ export const Timeline: React.FC = (): React.JSX.Element => {
             
             <div className="flex items-center gap-4 mb-4">
               <h1 className="text-4xl md:text-5xl font-hero text-navy">The election process</h1>
-              <span className="bg-indigo text-white text-xs px-3 py-1 rounded-full font-bold">6 PHASES</span>
+              <span className="bg-indigo text-navy text-xs px-3 py-1 rounded-full font-bold">6 PHASES</span>
             </div>
             
             <p className="text-xl text-on-surface/70 leading-relaxed font-body">
@@ -70,7 +70,7 @@ export const Timeline: React.FC = (): React.JSX.Element => {
         </div>
 
         <TimelinePanel 
-          onAskCivicIQ={(ctx) => {
+          onAskCivicFirst={(ctx) => {
             setActiveContext(ctx);
             setIsOpen(true);
           }} 

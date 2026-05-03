@@ -32,7 +32,7 @@ describe('AI Fallback Tests', () => {
       await gen.next();
     } catch (error: unknown) {
       const message = error instanceof Error ? error.message : String(error);
-      expect(message).toBe('CivicIQ is temporarily unavailable. Please try again in a moment.');
+      expect(message).toBe('CivicFirst is temporarily unavailable. Please try again in a moment.');
     }
   });
 

@@ -116,16 +116,16 @@ describe('User Journey Integration', () => {
     expect(items.length).toBe(6);
   });
 
-  it('Timeline: Ask CivicIQ button opens chat', () => {
+  it('Timeline: Ask CivicFirst button opens chat', () => {
     renderPage(Timeline, '/timeline');
-    const askBtn = screen.getByRole('button', { name: /Ask CivicIQ about this phase/i });
+    const askBtn = screen.getByRole('button', { name: /Ask CivicFirst about this phase/i });
     fireEvent.click(askBtn);
     expect(useChatStore.getState().isOpen).toBe(true);
   });
 
   it('Timeline: context is set when ask button clicked', () => {
     renderPage(Timeline, '/timeline');
-    fireEvent.click(screen.getByRole('button', { name: /Ask CivicIQ about this phase/i }));
+    fireEvent.click(screen.getByRole('button', { name: /Ask CivicFirst about this phase/i }));
     expect(useChatStore.getState().activeContext).not.toBeNull();
   });
 

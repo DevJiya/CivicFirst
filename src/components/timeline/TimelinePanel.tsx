@@ -12,7 +12,7 @@ import { trackEvent } from '../../lib/analytics';
 
 interface TimelinePanelProps {
   /** Callback to initiate an AI chat with specific context. */
-  onAskCivicIQ: (context: string) => void;
+  onAskCivicFirst: (context: string) => void;
   /** Optional ID of the phase to highlight initially. */
   initialPhaseId?: string;
 }
@@ -22,7 +22,7 @@ interface TimelinePanelProps {
  * @param {TimelinePanelProps} props Component properties.
  * @returns {React.JSX.Element} The rendered timeline panel.
  */
-export const TimelinePanel: React.FC<TimelinePanelProps> = ({ onAskCivicIQ, initialPhaseId }): React.JSX.Element => {
+export const TimelinePanel: React.FC<TimelinePanelProps> = ({ onAskCivicFirst, initialPhaseId }): React.JSX.Element => {
   const { phases, activePhaseId, progress, setActivePhase } = useTimeline();
   
   useEffect(() => {
@@ -82,7 +82,7 @@ export const TimelinePanel: React.FC<TimelinePanelProps> = ({ onAskCivicIQ, init
       <div className="lg:sticky lg:top-32 h-[calc(100vh-160px)] min-h-[500px]">
         <PhaseDetail 
           phase={selectedPhase} 
-          onAskCivicIQ={onAskCivicIQ} 
+          onAskCivicFirst={onAskCivicFirst} 
         />
       </div>
     </div>

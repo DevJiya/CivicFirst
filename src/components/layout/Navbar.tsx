@@ -45,7 +45,7 @@ export const Navbar: React.FC = (): React.JSX.Element => {
         <div className="flex justify-between h-16 items-center">
           <Link to="/" className="flex items-center gap-3 focus:outline-none focus:ring-2 focus:ring-amber rounded-md px-2">
             <Logo />
-            <span className="text-white font-hero text-xl font-bold tracking-tight">CivicIQ</span>
+            <span className="text-white font-hero text-xl font-bold tracking-tight">CivicFirst</span>
           </Link>
 
           <DesktopNav 

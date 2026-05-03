@@ -1,12 +1,12 @@
-# CivicIQ System Architecture & Design 🏗️
+# CivicFirst System Architecture & Design 🏗️
 
-This document provides a deep technical breakdown of the architectural patterns, data lifecycles, and security boundaries that form the foundation of the CivicIQ platform.
+This document provides a deep technical breakdown of the architectural patterns, data lifecycles, and security boundaries that form the foundation of the CivicFirst platform.
 
 ---
 
 ## 1. High-Level Architectural Blueprint
 
-CivicIQ is engineered as a **Serverless, High-Performance Web Infrastructure**. It utilizes a decoupled architecture where the frontend acts as a "thick client," handling complex state transitions and security checks locally to reduce server-side latency.
+CivicFirst is engineered as a **Serverless, High-Performance Web Infrastructure**. It utilizes a decoupled architecture where the frontend acts as a "thick client," handling complex state transitions and security checks locally to reduce server-side latency.
 
 ```mermaid
 graph TD
@@ -59,7 +59,7 @@ We employ a **Three-Tier State Model** to ensure data integrity and sub-second U
 | **Persistent** | `Firestore` / `LocalStorage` | Long-term user progress, chat history, and security rate-limit tokens. |
 
 ### **State Rehydration Strategy**
-CivicIQ implements a "Stale-While-Revalidate" pattern for user data. On load, the `Zustand` store is hydrated from `localStorage` for instant rendering, while a background sync fetches the latest source-of-truth from `Firestore`.
+CivicFirst implements a "Stale-While-Revalidate" pattern for user data. On load, the `Zustand` store is hydrated from `localStorage` for instant rendering, while a background sync fetches the latest source-of-truth from `Firestore`.
 
 ---
 
@@ -82,4 +82,4 @@ The platform implements a **Stateless Token Bucket Algorithm** in the `useRateLi
 - **Scalability**: This client-side approach reduces load on backend security services while providing instant feedback to the user.
 
 ---
-**CivicIQ — Engineering a Resilient Democracy.**
+**CivicFirst — Engineering a Resilient Democracy.**

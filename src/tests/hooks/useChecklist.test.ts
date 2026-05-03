@@ -93,7 +93,7 @@ describe('useChecklist', () => {
       result.current.toggleItem(CIVIC_CHECKLIST[0].id);
     });
 
-    expect(setItemSpy).toHaveBeenCalledWith('civiciq_checklist_progress', expect.any(String));
+    expect(setItemSpy).toHaveBeenCalledWith('civicfirst_checklist_progress', expect.any(String));
     setItemSpy.mockRestore();
   });
 });

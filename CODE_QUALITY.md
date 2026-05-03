@@ -1,7 +1,7 @@
 # 💎 Engineering Excellence & Code Quality
 
 ## Executive Summary
-This document serves as a technical testament to the engineering rigor behind CivicIQ. The codebase represents the **gold standard of React/TypeScript engineering**, designed not as a hackathon prototype, but as a production-grade, enterprise-ready platform. Every architectural decision, from the strict type system to the modular hook-based logic, has been made with three core principles in mind: **Stability, Scalability, and Auditability.**
+This document serves as a technical testament to the engineering rigor behind CivicFirst. The codebase represents the **gold standard of React/TypeScript engineering**, designed not as a hackathon prototype, but as a production-grade, enterprise-ready platform. Every architectural decision, from the strict type system to the modular hook-based logic, has been made with three core principles in mind: **Stability, Scalability, and Auditability.**
 
 ---
 
@@ -29,7 +29,7 @@ export interface ElectionPhase {
 ---
 
 ## 🏛️ 2. Architectural Integrity (Layered Separation)
-CivicIQ follows a strict **Layered Architecture**, ensuring a clean separation of concerns and preventing spaghetti code.
+CivicFirst follows a strict **Layered Architecture**, ensuring a clean separation of concerns and preventing spaghetti code.
 
 ```mermaid
 graph TD
@@ -52,7 +52,7 @@ graph TD
 ---
 
 ## 🎯 3. Single Responsibility Principle (SRP)
-Every file and function in CivicIQ has exactly one reason to change. 
+Every file and function in CivicFirst has exactly one reason to change. 
 
 *   **Example**: `useAuth.ts` handles identity, `useTimeline.ts` handles phase progression, and `useGemini.ts` handles AI orchestration. They never overlap.
 *   **Evidence**: No component in this repository exceeds **150 lines**, and no logic function exceeds **30 lines**.
@@ -101,7 +101,7 @@ We avoid code duplication by extracting shared logic into highly reusable module
 ## 🛡️ 7. Resilience & Error Handling
 We utilize a **Defense-in-Depth** error strategy.
 - **Global Error Boundaries**: Implemented at the application root and major route levels. This ensures that a failure in one component (e.g., a chart or AI response) never crashes the entire application.
-- **User Layer**: Users receive helpful, non-technical guidance (e.g., "CivicIQ is temporarily unavailable") via professional fallback UIs.
+- **User Layer**: Users receive helpful, non-technical guidance (e.g., "CivicFirst is temporarily unavailable") via professional fallback UIs.
 - **System Layer**: Raw errors are caught in structured `try/catch` blocks and logged via a dedicated, production-safe `Logger` utility that suppresses non-critical info in live environments.
 
 ---

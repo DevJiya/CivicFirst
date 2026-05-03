@@ -1,6 +1,6 @@
-# 🤝 Contributing to CivicIQ
+# 🤝 Contributing to CivicFirst
 
-We love your interest in making democracy more accessible! CivicIQ is a mission-driven project, and we welcome contributions that align with our core values of **neutrality, inclusivity, and technical excellence.**
+We love your interest in making democracy more accessible! CivicFirst is a mission-driven project, and we welcome contributions that align with our core values of **neutrality, inclusivity, and technical excellence.**
 
 ---
 
@@ -17,7 +17,7 @@ By participating in this project, you agree to maintain a professional and respe
 
 ## 🛠️ 3. Development Setup
 1. **Fork** the repository.
-2. **Clone** your fork: `git clone https://github.com/YOUR_USERNAME/CivicIQ.git`.
+2. **Clone** your fork: `git clone https://github.com/YOUR_USERNAME/CivicFirst.git`.
 3. **Install Dependencies**: `npm install`.
 4. **Environment Config**: Copy `.env.example` to `.env` and add your keys.
 5. **Start Dev Server**: `npm run dev`.

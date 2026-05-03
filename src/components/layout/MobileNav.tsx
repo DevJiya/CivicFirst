@@ -82,7 +82,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({
               className="w-full flex items-center gap-3 bg-amber text-navy px-4 py-3 rounded-lg font-bold"
             >
               <MessageSquare className="w-5 h-5" />
-              {t('nav.askCivicIQ')}
+              {t('nav.askCivicFirst')}
             </button>
             <div className="pt-2">
               <LanguageSwitcher />

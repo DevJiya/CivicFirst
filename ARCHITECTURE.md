@@ -1,7 +1,7 @@
 # 🏛️ Technical Architecture & System Design
 
 ## System Design Philosophy
-The architecture of CivicIQ was designed with the same rigor as a production-grade enterprise application. It prioritizes **decoupling**, **unidirectional data flow**, and **separation of concerns**. By isolating business logic from the UI, we ensure the platform is both testable and resilient to changes in external service providers.
+The architecture of CivicFirst was designed with the same rigor as a production-grade enterprise application. It prioritizes **decoupling**, **unidirectional data flow**, and **separation of concerns**. By isolating business logic from the UI, we ensure the platform is both testable and resilient to changes in external service providers.
 
 ---
 
@@ -90,4 +90,4 @@ The architecture of CivicIQ was designed with the same rigor as a production-gra
 
 ---
 
-**The architecture of CivicIQ was designed with the same rigor as a production-grade enterprise application, not as a prototype.**
+**The architecture of CivicFirst was designed with the same rigor as a production-grade enterprise application, not as a prototype.**

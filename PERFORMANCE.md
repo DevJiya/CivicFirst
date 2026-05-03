@@ -1,7 +1,7 @@
 # ⚡ Performance Engineering
 
 ## Executive Summary
-CivicIQ achieves near-perfect performance scores through deliberate engineering choices at every layer of the stack—from build-time tree-shaking to runtime state memoization. The platform is optimized for **low-bandwidth environments** and **mobile-first interactions**, ensuring that civic information is accessible even in sub-optimal network conditions.
+CivicFirst achieves near-perfect performance scores through deliberate engineering choices at every layer of the stack—from build-time tree-shaking to runtime state memoization. The platform is optimized for **low-bandwidth environments** and **mobile-first interactions**, ensuring that civic information is accessible even in sub-optimal network conditions.
 
 ---
 
@@ -67,4 +67,4 @@ Expensive component re-renders are prevented using `useMemo` for data transforma
 
 ---
 
-**CivicIQ represents the pinnacle of web performance engineering, delivering a high-fidelity experience in an ultra-lightweight, resilient package.**
+**CivicFirst represents the pinnacle of web performance engineering, delivering a high-fidelity experience in an ultra-lightweight, resilient package.**

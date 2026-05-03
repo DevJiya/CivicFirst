@@ -22,7 +22,7 @@ interface PhaseDetailProps {
   /** The detailed election phase data to display. */
   phase: ElectionPhase;
   /** Callback to initiate an AI chat with this phase as context. */
-  onAskCivicIQ: (context: string) => void;
+  onAskCivicFirst: (context: string) => void;
 }
 
 /**
@@ -42,7 +42,7 @@ const IconMap: Record<string, LucideIcon> = {
  * @param {PhaseDetailProps} props Component properties.
  * @returns {React.JSX.Element} The rendered phase detail view.
  */
-export const PhaseDetail: React.FC<PhaseDetailProps> = ({ phase, onAskCivicIQ }): React.JSX.Element => {
+export const PhaseDetail: React.FC<PhaseDetailProps> = ({ phase, onAskCivicFirst }): React.JSX.Element => {
   const Icon = IconMap[phase.id] || UserCheck;
 
   return (
@@ -89,7 +89,7 @@ export const PhaseDetail: React.FC<PhaseDetailProps> = ({ phase, onAskCivicIQ })
               <ol className="space-y-4">
                 {phase.steps.map((step, idx) => (
                   <li key={idx} className="flex gap-4">
-                    <span className="flex-shrink-0 w-6 h-6 bg-indigo text-white rounded-full flex items-center justify-center text-xs font-bold">
+                    <span className="flex-shrink-0 w-6 h-6 bg-indigo text-navy rounded-full flex items-center justify-center text-xs font-bold">
                       {idx + 1}
                     </span>
                     <span className="text-on-surface/90">{step}</span>
@@ -111,7 +111,7 @@ export const PhaseDetail: React.FC<PhaseDetailProps> = ({ phase, onAskCivicIQ })
             <div className="pt-6 border-t border-gray-100 flex justify-between items-center">
             <div className="text-sm text-on-surface/60">Need help with this phase?</div>
             <button 
-              onClick={() => { onAskCivicIQ(`I missed a deadline or made a mistake in the "${phase.name}" phase. What are my options for recovery?`); }}
+              onClick={() => { onAskCivicFirst(`I missed a deadline or made a mistake in the "${phase.name}" phase. What are my options for recovery?`); }}
               className="text-xs font-bold text-indigo hover:text-navy transition-colors flex items-center gap-1 group"
             >
               <AlertCircle className="w-3.5 h-3.5 group-hover:animate-bounce" />
@@ -124,11 +124,11 @@ export const PhaseDetail: React.FC<PhaseDetailProps> = ({ phase, onAskCivicIQ })
         {/* Action Bar */}
         <div className="p-8 bg-gray-50 border-t border-gray-100">
           <button
-            onClick={() => { onAskCivicIQ(phase.name); }}
+            onClick={() => { onAskCivicFirst(phase.name); }}
             className="w-full bg-amber text-navy py-4 rounded-lg font-bold flex items-center justify-center gap-3 hover:scale-[1.02] transition-transform shadow-md"
           >
             <MessageSquare className="w-5 h-5" aria-hidden="true" />
-            Ask CivicIQ about this phase
+            Ask CivicFirst about this phase
           </button>
         </div>
       </motion.div>

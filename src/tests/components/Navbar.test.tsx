@@ -64,7 +64,7 @@ describe('Navbar Component', () => {
     expect(screen.getByRole('navigation')).toHaveAttribute('aria-label', 'Main Navigation');
   });
 
-  it('renders the CivicIQ logo', () => {
+  it('renders the CivicFirst logo', () => {
     vi.mocked(useAuth).mockReturnValue({ 
       user: null, 
       isAuthenticated: false,
@@ -73,7 +73,7 @@ describe('Navbar Component', () => {
       loading: false,
     });
     render(<BrowserRouter><Navbar /></BrowserRouter>);
-    expect(screen.getByText('CivicIQ')).toBeInTheDocument();
+    expect(screen.getByText('CivicFirst')).toBeInTheDocument();
   });
 
   it('shows navigation links', () => {

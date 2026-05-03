@@ -18,10 +18,10 @@ export const Footer: React.FC = (): React.JSX.Element => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-8 h-8 bg-amber rounded-sm flex items-center justify-center font-bold text-navy">C</div>
-              <span className="text-2xl font-hero font-bold">CivicIQ</span>
+              <span className="text-2xl font-hero font-bold">CivicFirst</span>
             </div>
             <p className="text-white/60 max-w-md font-body">
-              CivicIQ is an educational platform dedicated to making the democratic process accessible to every citizen.
+              CivicFirst is an educational platform dedicated to making the democratic process accessible to every citizen.
             </p>
           </div>
           <div className="md:text-right">

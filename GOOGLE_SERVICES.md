@@ -1,12 +1,12 @@
 # ☁️ Google Cloud & Firebase Integration
 
 ## Executive Summary
-CivicIQ is a cloud-native platform that leverages the full breadth of the Google Cloud ecosystem. We do not merely use Google services as checkboxes—each service is deeply integrated and solves a specific, irreplaceable role in delivering a stable, intelligent, and inclusive civic experience.
+CivicFirst is a cloud-native platform that leverages the full breadth of the Google Cloud ecosystem. We do not merely use Google services as checkboxes—each service is deeply integrated and solves a specific, irreplaceable role in delivering a stable, intelligent, and inclusive civic experience.
 
 ---
 
 ## 🏗️ 1. Gemini 2.0 Flash: The Reasoning Engine
-*   **Role**: Powers "Ask CivicIQ", providing grounded, non-partisan election guidance.
+*   **Role**: Powers "Ask CivicFirst", providing grounded, non-partisan election guidance.
 *   **Depth**: We utilize **System Instructions**, strict **Safety Settings**, and the **`AIEngine`** for heuristic input sanitization.
 *   **Safety**: Integrated with our **`ENV` utility** to ensure secure API key management and validation at application boot.
 *   **Why Chosen**: Lowest latency for streaming responses and superior adherence to procedural guardrails.
@@ -71,4 +71,4 @@ const model = genAI.getGenerativeModel({
 
 ---
 
-**CivicIQ does not merely use Google services as checkboxes—each service is deeply integrated and solves a specific, irreplaceable role in the platform.**
+**CivicFirst does not merely use Google services as checkboxes—each service is deeply integrated and solves a specific, irreplaceable role in the platform.**

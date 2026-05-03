@@ -3,7 +3,7 @@ import { SecurityEngine, RateLimitTier, BucketState, LimitResult } from '../engi
 
 export const useRateLimit = (): { checkLimit: (tier: RateLimitTier) => { allowed: boolean; remaining: number; resetTime: number } } => {
   const [buckets, setBuckets] = useState<Record<RateLimitTier, BucketState>>(() => {
-    const saved = localStorage.getItem('civiciq_rate_limits');
+    const saved = localStorage.getItem('civicfirst_rate_limits');
     if (saved) {
       try {
         return JSON.parse(saved) as Record<RateLimitTier, BucketState>;
@@ -15,7 +15,7 @@ export const useRateLimit = (): { checkLimit: (tier: RateLimitTier) => { allowed
   });
 
   useEffect(() => {
-    localStorage.setItem('civiciq_rate_limits', JSON.stringify(buckets));
+    localStorage.setItem('civicfirst_rate_limits', JSON.stringify(buckets));
   }, [buckets]);
 
   const checkLimit = useCallback((tier: RateLimitTier) => {

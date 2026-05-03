@@ -48,7 +48,7 @@ export const validatePrompt = (prompt: string): { safe: boolean; reason?: string
 };
 
 /**
- * Streams an answer from CivicIQ based on prompt and history.
+ * Streams an answer from CivicFirst based on prompt and history.
  * @param {string} prompt The user's question.
  * @param {ChatMessage[]} history Previous messages in the session.
  * @param {string} [phaseContext] Optional context about the current election phase.
@@ -84,7 +84,7 @@ export async function* streamCivicAnswer(
     }
   } catch (error) {
     logger.error('Gemini error:', error);
-    throw new Error('CivicIQ is temporarily unavailable. Please try again in a moment.');
+    throw new Error('CivicFirst is temporarily unavailable. Please try again in a moment.');
   }
 }
 

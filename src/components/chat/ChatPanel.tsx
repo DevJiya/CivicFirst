@@ -85,7 +85,7 @@ export const ChatPanel: React.FC = (): React.JSX.Element => {
           transition={{ type: 'spring', damping: 25, stiffness: 200 }}
           className="fixed top-0 right-0 w-full md:w-[450px] h-full bg-white shadow-2xl z-[100] flex flex-col"
           role="dialog"
-          aria-label="Ask CivicIQ Chat"
+          aria-label="Ask CivicFirst Chat"
         >
           <ChatHeader onClear={clearChat} onClose={handleClose} closeBtnRef={closeBtnRef} />
 

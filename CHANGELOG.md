@@ -129,7 +129,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [1.0.0] - 2024-04-20
 
 ### Added
-- Initial release of the CivicIQ platform.
+- Initial release of the CivicFirst platform.
 - 6-Phase Phased Election Journey.
 - Grounded AI Assistant powered by Gemini 2.0 Flash.
 - Google OAuth integration via Firebase.

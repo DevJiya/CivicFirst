@@ -70,7 +70,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading }
           onChange={(e) => { setContent(e.target.value); }}
           onKeyDown={handleKeyDown}
           placeholder={t('chat.placeholder')}
-          aria-label="Message CivicIQ"
+          aria-label="Message CivicFirst"
           maxLength={500}
           className="w-full bg-transparent border-none focus:ring-0 text-sm resize-none py-2 px-2 max-h-[120px] custom-scrollbar"
           rows={1}
@@ -97,7 +97,7 @@ export const ChatInput: React.FC<ChatInputProps> = ({ onSendMessage, isLoading }
               className={clsx(
                 "p-2 rounded-lg transition-all",
                 content.trim() && !isLoading 
-                  ? "bg-indigo text-white shadow-md hover:scale-105" 
+                  ? "bg-indigo text-navy shadow-md hover:scale-105" 
                   : "bg-gray-200 text-gray-400"
               )}
             >

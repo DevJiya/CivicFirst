@@ -67,7 +67,7 @@ export const DesktopNav: React.FC<DesktopNavProps> = ({
         className="flex items-center gap-2 bg-amber text-navy px-4 py-2 rounded-lg font-bold hover:scale-105 transition-transform"
       >
         <MessageSquare className="w-4 h-4" aria-hidden="true" />
-        {t('nav.askCivicIQ')}
+        {t('nav.askCivicFirst')}
       </button>
       
       {isAuthenticated ? (

@@ -105,15 +105,15 @@ describe('Timeline Component', () => {
     expect(screen.getAllByText('General Election Campaign').length).toBeGreaterThan(0);
   });
 
-  it('PhaseDetail "Ask CivicIQ" button fires callback', () => {
+  it('PhaseDetail "Ask CivicFirst" button fires callback', () => {
     const mockOnAsk = vi.fn();
     render(
       <MemoryRouter>
-        <TimelinePanel onAskCivicIQ={mockOnAsk} />
+        <TimelinePanel onAskCivicFirst={mockOnAsk} />
       </MemoryRouter>
     );
     fireEvent.click(
-      screen.getByRole('button', { name: /Ask CivicIQ about this phase/i })
+      screen.getByRole('button', { name: /Ask CivicFirst about this phase/i })
     );
     expect(mockOnAsk).toHaveBeenCalled();
   });

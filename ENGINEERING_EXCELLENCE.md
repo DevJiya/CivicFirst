@@ -1,5 +1,5 @@
 ## 🏛️ 1. Domain Logic Engine Architecture
-CivicIQ employs a **Logic Engine Architecture** to achieve total separation of concerns. By decoupling business logic from the React UI layer, we ensure the core domain is testable, portable, and resilient to UI changes. This "Clean Architecture" signal is a hallmark of senior-level engineering.
+CivicFirst employs a **Logic Engine Architecture** to achieve total separation of concerns. By decoupling business logic from the React UI layer, we ensure the core domain is testable, portable, and resilient to UI changes. This "Clean Architecture" signal is a hallmark of senior-level engineering.
 
 - **`TimelineEngine`**: Manages complex election phase calculations, progress percentages, and status orchestration.
 - **`AIEngine`**: A hardened orchestrator for security sanitization, case-insensitive heuristic filtering, and LLM history formatting.
@@ -57,7 +57,7 @@ Our integration with Gemini 2.0 Flash goes beyond simple API calls. We've built 
 ---
 
 ## 🌍 3. Industrial-Grade i18n Strategy
-CivicIQ handles internationalization at scale, supporting 16+ languages with a focus on RTL (Right-to-Left) precision.
+CivicFirst handles internationalization at scale, supporting 16+ languages with a focus on RTL (Right-to-Left) precision.
 
 - **Logical Properties**: We use CSS logical properties (`margin-inline-start`, `padding-inline-end`) instead of absolute ones (`margin-left`), ensuring the UI flips perfectly for Urdu, Arabic, and Hebrew.
 - **Dynamic Font Loading**: Specialized font weights are loaded based on the character set of the selected language.
@@ -82,11 +82,11 @@ The codebase operates under `strict: true` and has **zero `any` types.**
 ---
 
 ## 🛠️ 6. CI/CD & Cloud Infrastructure
-CivicIQ is ready for planetary scale.
+CivicFirst is ready for planetary scale.
 - **Cloud Run Native**: Stateless container architecture for infinite horizontal scaling.
 - **Nginx Hardening**: Custom configuration in `nginx.conf` for security headers (HSTS, CSP, X-Frame-Options).
 - **Automated Deployments**: Ready-to-use `cloudbuild.yaml` for GCP integration.
 
 ---
 
-**CivicIQ is a masterclass in modern React development.** It prioritizes the user's safety and the developer's sanity through rigorous engineering discipline.
+**CivicFirst is a masterclass in modern React development.** It prioritizes the user's safety and the developer's sanity through rigorous engineering discipline.

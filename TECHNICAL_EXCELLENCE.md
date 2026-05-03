@@ -1,10 +1,10 @@
-# CivicIQ Technical Excellence & Architectural Manifest
+# CivicFirst Technical Excellence & Architectural Manifest
 
-This document outlines the engineering principles, architectural patterns, and quality standards that make CivicIQ an enterprise-grade, production-ready platform.
+This document outlines the engineering principles, architectural patterns, and quality standards that make CivicFirst an enterprise-grade, production-ready platform.
 
 ## 1. Architectural Strategy: Domain Logic Engines
 
-CivicIQ employs a **Logic Engine Architecture** to achieve total separation of concerns. By decoupling business logic from the React UI layer, we ensure the core domain is testable, portable, and resilient to UI changes.
+CivicFirst employs a **Logic Engine Architecture** to achieve total separation of concerns. By decoupling business logic from the React UI layer, we ensure the core domain is testable, portable, and resilient to UI changes.
 
 - **`TimelineEngine`**: Manages complex election phase calculations and progression logic.
 - **`AIEngine`**: Orchestrates multi-layer security sanitization, character encoding, and 15+ injection pattern detections.
@@ -13,7 +13,7 @@ CivicIQ employs a **Logic Engine Architecture** to achieve total separation of c
 
 ## 2. Robust Security Guardrails
 
-Security is baked into the core of CivicIQ, not added as an afterthought.
+Security is baked into the core of CivicFirst, not added as an afterthought.
 
 - **Multi-Layer Hardening**: Implements a defense-in-depth strategy across Nginx (HSTS, CSP), Application (AIEngine sanitization), and Logic (SecurityEngine anomaly scoring) layers.
 - **Injection Detection**: Robust protection against "DAN mode", prompt injection, and jailbreaking via 15+ regex patterns in `AIEngine`.
@@ -43,4 +43,4 @@ Our test suite provides **100% logic coverage** and **98%+ overall coverage**, e
 
 ---
 
-**CivicIQ isn't just a web app; it's a blueprint for modern, secure, and scalable AI-driven software architecture.**
+**CivicFirst isn't just a web app; it's a blueprint for modern, secure, and scalable AI-driven software architecture.**

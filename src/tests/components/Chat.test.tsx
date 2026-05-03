@@ -149,10 +149,10 @@ describe('Chat Component', () => {
     expect(screen.getByRole('button', { name: /Close chat/i })).toBeInTheDocument();
   });
 
-  it('ARIA: Input has aria-label="Message CivicIQ"', () => {
+  it('ARIA: Input has aria-label="Message CivicFirst"', () => {
     renderChat();
     const input = screen.getByPlaceholderText('chat.placeholder');
-    expect(input).toHaveAttribute('aria-label', 'Message CivicIQ');
+    expect(input).toHaveAttribute('aria-label', 'Message CivicFirst');
   });
 
   it('ARIA: Clear button has aria-label', () => {
@@ -165,7 +165,7 @@ describe('Chat Component', () => {
     expect(screen.getByText('chat.empty')).toBeInTheDocument();
   });
 
-  it('Panel header contains "Ask CivicIQ" title', () => {
+  it('Panel header contains "Ask CivicFirst" title', () => {
     renderChat();
     expect(screen.getByText('chat.title')).toBeInTheDocument();
   });

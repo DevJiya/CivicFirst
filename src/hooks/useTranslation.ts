@@ -8,11 +8,11 @@ import { TranslationEngine } from '../engines/TranslationEngine';
  */
 export const useTranslation = () => {
   const [lang, setLang] = useState<LanguageCode>(
-    (localStorage.getItem('civiciq_lang') as LanguageCode) || 'en'
+    (localStorage.getItem('civicfirst_lang') as LanguageCode) || 'en'
   );
 
   useEffect(() => {
-    localStorage.setItem('civiciq_lang', lang);
+    localStorage.setItem('civicfirst_lang', lang);
     // Apply direction to the HTML root for global RTL support
     const dir = TranslationEngine.getDirection(lang);
     document.documentElement.dir = dir;

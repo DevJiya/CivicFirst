@@ -19,9 +19,9 @@ interface LanguageState {
  * Zustand store for managing application localization.
  */
 export const useLanguageStore = create<LanguageState>((set) => ({
-  currentLanguage: (localStorage.getItem('civiciq_language') as LanguageCode) || 'en',
+  currentLanguage: (localStorage.getItem('civicfirst_language') as LanguageCode) || 'en',
   setLanguage: (lang: LanguageCode): void => {
-    localStorage.setItem('civiciq_language', lang);
+    localStorage.setItem('civicfirst_language', lang);
     set({ currentLanguage: lang });
   },
 }));

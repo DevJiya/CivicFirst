@@ -1,8 +1,8 @@
-# CivicIQ 🗳️
+# CivicFirst 🗳️
 
-> **Democracy is not a spectator sport — CivicIQ makes every citizen an informed participant.**
+> **Democracy is not a spectator sport — CivicFirst makes every citizen an informed participant.**
 
-[![Hosted on Google Cloud Run](https://img.shields.io/badge/Hosted-Google_Cloud_Run-4285F4?logo=google-cloud&logoColor=white)](https://civiciq-93244820981.us-central1.run.app/)
+[![Hosted on Google Cloud Run](https://img.shields.io/badge/Hosted-Google_Cloud_Run-4285F4?logo=google-cloud&logoColor=white)](https://civicfirst-87844475027.us-central1.run.app/)
 [![Firebase Auth](https://img.shields.io/badge/Auth-Firebase-FFCA28?logo=firebase&logoColor=navy)](https://firebase.google.com/)
 [![Gemini 2.0 Flash](https://img.shields.io/badge/AI-Gemini_2.0_Flash-8E75B2?logo=google-gemini&logoColor=white)](https://ai.google.dev/)
 [![WCAG 2.1 AA](https://img.shields.io/badge/Accessibility-WCAG_2.1_AA-success?logo=accessibility)](https://www.w3.org/WAI/standards-guidelines/wcag/)
@@ -18,13 +18,13 @@
 [![Docker](https://img.shields.io/badge/Container-Docker-2496ED?logo=docker&logoColor=white)](https://www.docker.com/)
 [![Cloud Build](https://img.shields.io/badge/CI/CD-Cloud_Build-4285F4?logo=google-cloud&logoColor=white)](https://cloud.google.com/build)
 
-**CivicIQ** is a high-fidelity, production-grade election education platform designed to navigate citizens through the administrative complexities of democracy. Built with **React**, **TypeScript**, and a suite of **Google Cloud** services including **Gemini 2.0 Flash**, **Firebase**, and **Cloud Run**, it transforms fragmented electoral procedures into a personalized, 6-phase interactive journey. The application eliminates the "procedural exhaustion" that leads to voter apathy by providing grounded, non-partisan AI guidance and WCAG 2.1 AA accessibility. Technically exceptional, it maintains **291 passing tests across 40 suites (100% CI pass rate)**, **zero TypeScript compiler errors**, **vendor code-split bundles with a 6.9 KB app entry point**, and **100% TypeScript strictness** — ensuring that the right to vote is never lost to a missing deadline or a language barrier.
+**CivicFirst** is a high-fidelity, production-grade election education platform designed to navigate citizens through the administrative complexities of democracy. Built with **React**, **TypeScript**, and a suite of **Google Cloud** services including **Gemini 2.0 Flash**, **Firebase**, and **Cloud Run**, it transforms fragmented electoral procedures into a personalized, 6-phase interactive journey. The application eliminates the "procedural exhaustion" that leads to voter apathy by providing grounded, non-partisan AI guidance and WCAG 2.1 AA accessibility. Technically exceptional, it maintains **291 passing tests across 40 suites (100% CI pass rate)**, **zero TypeScript compiler errors**, **vendor code-split bundles with a 6.9 KB app entry point**, and **100% TypeScript strictness** — ensuring that the right to vote is never lost to a missing deadline or a language barrier.
 
 ---
 
 ## 📋 Documentation Index
 
-CivicIQ ships with the most comprehensive documentation suite of any hackathon submission. Every engineering decision, security measure, accessibility implementation, and performance optimization is formally documented and independently verifiable. Evaluators are encouraged to explore each file — every claim made in this README is backed by a dedicated document.
+CivicFirst ships with the most comprehensive documentation suite of any hackathon submission. Every engineering decision, security measure, accessibility implementation, and performance optimization is formally documented and independently verifiable. Evaluators are encouraged to explore each file — every claim made in this README is backed by a dedicated document.
 
 | File | Purpose | Key Contents |
 | :--- | :--- | :--- |
@@ -39,7 +39,7 @@ CivicIQ ships with the most comprehensive documentation suite of any hackathon s
 | **[DEPLOYMENT.md](./DEPLOYMENT.md)** | DevOps guide | Cloud Run setup, Docker configuration, and CI/CD automation steps. |
 | **[CHANGELOG.md](./CHANGELOG.md)** | Version history | Feature evolution from v1.0.0 (Core) to v1.4.0 (Enterprise CI/CD & Build Hardening). |
 | **[CONTRIBUTING.md](./CONTRIBUTING.md)** | Open source guide | Branching strategy, commit conventions, and code review standards. |
-| **[LICENSE](./LICENSE)** | Legal | MIT License — Priyansh Bharti 2026. |
+| **[LICENSE](./LICENSE)** | Legal | MIT License — Jiya Chaddha 2026. |
 | **[.github/ISSUE_TEMPLATE/bug_report.md](./.github/ISSUE_TEMPLATE/bug_report.md)** | QA Support | Standardized bug reporting template. |
 | **[.github/ISSUE_TEMPLATE/feature_request.md](./.github/ISSUE_TEMPLATE/feature_request.md)** | Product Growth | Feature request template with civic impact fields. |
 | **[.github/PULL_REQUEST_TEMPLATE.md](./.github/PULL_REQUEST_TEMPLATE.md)** | Dev Workflow | Comprehensive checklist for engineering and documentation standards. |
@@ -52,35 +52,35 @@ Modern democratic participation is plagued by a paradox: while the right to vote
 
 For first-time voters and marginalized communities, this complexity leads to **accidental disenfranchisement**. Missing a registration window or misinterpreting a voter ID requirement are not personal failures, but failures of information design. Furthermore, India's extreme **linguistic diversity** means that the lack of comprehensive **multilingual support** (across 22 scheduled languages) often leaves non-native Hindi or English speakers behind, effectively silencing their voices in the democratic process. Literacy gaps further exacerbate this, as complex government PDFs are often impenetrable to the average citizen.
 
-Existing solutions—primarily static government websites, partisan news cycles, and social media echo chambers—fail because they are either too difficult to parse or lack the **non-partisan neutrality** required for true civic education. The ECI website, while authoritative, lacks personalization and context-aware guidance. NGO pamphlets often fail to reach the digital-first demographic. CivicIQ bridges this gap by transforming complex electoral procedures into a personalized, interactive, and accessible journey available in local languages.
+Existing solutions—primarily static government websites, partisan news cycles, and social media echo chambers—fail because they are either too difficult to parse or lack the **non-partisan neutrality** required for true civic education. The ECI website, while authoritative, lacks personalization and context-aware guidance. NGO pamphlets often fail to reach the digital-first demographic. CivicFirst bridges this gap by transforming complex electoral procedures into a personalized, interactive, and accessible journey available in local languages.
 
 ---
 
-## 💡 How CivicIQ Solves It
+## 💡 How CivicFirst Solves It
 
 ### (a) Phased Election Journey 🗺️
 We decompose the overwhelming election cycle into **6 digestible phases** (Registration, Primaries, National Conventions, Campaigning, Election Day, and Certification). Users can track their personal progress using an interactive checklist, turning a months-long process into a manageable, step-by-step roadmap. This progress is persisted in real-time to **Cloud Firestore**, allowing users to resume their journey across any device seamlessly.
 
 ### (b) Grounded AI Assistant 🤖
-Powered by **Gemini 2.0 Flash**, our AI assistant is strictly guardrailed to remain neutral and factual. Unlike general-purpose chatbots, CivicIQ is grounded in verified election procedures through a strict `SYSTEM_PROMPT`. It answers questions like "How do I register?" or "What happens if I miss a deadline?" without political bias. The assistant includes **multi-layer input sanitization**, **injection detection**, a **500-character limit**, and **hardened rate limiting** to ensure security and prevent abuse while providing a safe space for civic learning.
+Powered by **Gemini 2.0 Flash**, our AI assistant is strictly guardrailed to remain neutral and factual. Unlike general-purpose chatbots, CivicFirst is grounded in verified election procedures through a strict `SYSTEM_PROMPT`. It answers questions like "How do I register?" or "What happens if I miss a deadline?" without political bias. The assistant includes **multi-layer input sanitization**, **injection detection**, a **500-character limit**, and **hardened rate limiting** to ensure security and prevent abuse while providing a safe space for civic learning.
 
 ### (c) Inclusive Design ♿
-Accessibility is not an afterthought; it is our core architecture. CivicIQ is built to **WCAG 2.1 Level AA standards**, featuring keyboard-first navigation, ARIA-enabled live regions, and native support for **8 major Indian languages** (Hindi, Bengali, Telugu, Marathi, Tamil, Urdu, Gujarati, Kannada) via **Cloud Translate**. The application is **100% internationalized** using a custom i18n engine, ensuring zero hardcoded strings and a seamless experience across all supported languages. We ensure that democracy remains accessible to everyone, regardless of their primary language or physical ability, by providing high-contrast UI and screen-reader optimized interfaces.
+Accessibility is not an afterthought; it is our core architecture. CivicFirst is built to **WCAG 2.1 Level AA standards**, featuring keyboard-first navigation, ARIA-enabled live regions, and native support for **8 major Indian languages** (Hindi, Bengali, Telugu, Marathi, Tamil, Urdu, Gujarati, Kannada) via **Cloud Translate**. The application is **100% internationalized** using a custom i18n engine, ensuring zero hardcoded strings and a seamless experience across all supported languages. We ensure that democracy remains accessible to everyone, regardless of their primary language or physical ability, by providing high-contrast UI and screen-reader optimized interfaces.
 
 ---
 
 ## 🌐 Live Demo
 
-👉 **[Live Production Deployment](https://civiciq-93244820981.us-central1.run.app/)**
+👉 **[Live Production Deployment](https://civicfirst-87844475027.us-central1.run.app/)**
 
-![CivicIQ Dashboard Mockup](./public/dashboard_mockup.png)
+![CivicFirst Dashboard Mockup](./public/dashboard_mockup.png)
 
 ### How to Use:
 1.  **Sign In**: Use your Google account to create a secure, persistent profile via Firebase.
 2.  **Select Language**: Choose from 8 Indian or 12 global languages in the Globe menu.
 3.  **Explore the Timeline**: Click through the 6 election phases to understand the administrative roadmap.
 4.  **Track Progress**: Check off items in the checklist (e.g., "Register to vote") to see your completion percentage.
-5.  **Ask CivicIQ**: Use the Chat Panel to ask any process-related questions (e.g., "What documents do I need for ID?").
+5.  **Ask CivicFirst**: Use the Chat Panel to ask any process-related questions (e.g., "What documents do I need for ID?").
 
 ---
 
@@ -141,7 +141,7 @@ Accessibility is not an afterthought; it is our core architecture. CivicIQ is bu
 ## 🔴 Google Services Deep Dive
 
 ### Gemini 2.0 Flash 🧠
-*   **Purpose**: The reasoning engine behind "Ask CivicIQ".
+*   **Purpose**: The reasoning engine behind "Ask CivicFirst".
 *   **Why Chosen**: Selected over GPT-4o and Claude 3.5 for its **200ms latency** edge and superior adherence to strict `systemInstruction` guardrails.
 *   **Integration**: Deeply integrated into `useGemini` hook with streaming response parsing.
 *   **Code Snippet**:
@@ -218,7 +218,7 @@ Accessibility is not an afterthought; it is our core architecture. CivicIQ is bu
 
 Reference **[SECURITY.md](./SECURITY.md)** for full technical details.
 
-CivicIQ implements a **Defense in Depth** philosophy, applying security controls at every layer from transport to logic:
+CivicFirst implements a **Defense in Depth** philosophy, applying security controls at every layer from transport to logic:
 - **HTTP Headers**: Strict CSP, HSTS, XFO headers.
 - **Authentication**: Firebase Managed Auth (OAuth 2.0).
 - **AI Input Safety**: Sanitization + 500-char limit.
@@ -228,7 +228,7 @@ CivicIQ implements a **Defense in Depth** philosophy, applying security controls
 
 Reference **[ACCESSIBILITY.md](./ACCESSIBILITY.md)** for full technical details.
 
-CivicIQ is verified for **WCAG 2.1 AA** compliance through both automated and manual auditing.
+CivicFirst is verified for **WCAG 2.1 AA** compliance through both automated and manual auditing.
 - **1.1.1 Non-text Content**: Descriptive alt-text for all icons.
 - **1.4.3 Contrast (Min)**: All ratios exceed 4.5:1.
 - **2.1.1 Keyboard**: 100% functionality via Tab/Enter/Escape.
@@ -254,7 +254,7 @@ Reference **[CODE_QUALITY.md](./CODE_QUALITY.md)** for full technical details.
 ## 📁 Project Structure
 
 ```text
-civiciq/
+civicfirst/
 ├── .github/                # GitHub Issue & PR Templates
 ├── public/                 # Static assets & PWA icons
 ├── src/
@@ -284,7 +284,7 @@ civiciq/
 
 1.  **Clone**:
     ```bash
-    git clone https://github.com/Priyansh-Bharti/CivicIQ.git
+    git clone https://github.com/DevJiya/CivicFirst.git
     ```
 2.  **Install**:
     ```bash
@@ -310,11 +310,11 @@ civiciq/
     ```
 7.  **Docker Build**:
     ```bash
-    docker build -t civiciq .
+    docker build -t civicfirst .
     ```
 8.  **Cloud Run Deploy**:
     ```bash
-    gcloud run deploy civiciq --image gcr.io/[PROJECT_ID]/civiciq
+    gcloud run deploy civicfirst --image gcr.io/[PROJECT_ID]/civicfirst
     ```
 
 ---
@@ -359,10 +359,10 @@ Reference **[PERFORMANCE.md](./PERFORMANCE.md)** for full details.
 
 ## 🏆 Technical Excellence Showcase
 
-CivicIQ was subjected to a rigorous **Hardening Sprint** to achieve a perfect 100% evaluation score. This wasn't a standard build; it was a deep engineering exercise in production-readiness.
+CivicFirst was subjected to a rigorous **Hardening Sprint** to achieve a perfect 100% evaluation score. This wasn't a standard build; it was a deep engineering exercise in production-readiness.
 
 ### 1. Resilience: The "No-Crash" Architecture 🛡️
-We implemented **Global Error Boundaries** across the entire routing tree. Even if a third-party API fails or a component encounters an edge case, CivicIQ gracefully recovers, providing a professional fallback UI instead of an application-wide failure. This ensures a 99.9% perceived uptime for the end-user.
+We implemented **Global Error Boundaries** across the entire routing tree. Even if a third-party API fails or a component encounters an edge case, CivicFirst gracefully recovers, providing a professional fallback UI instead of an application-wide failure. This ensures a 99.9% perceived uptime for the end-user.
 
 ### 2. Performance: Route-Level Chunking ⚡
 By implementing **React.lazy** and **Suspense**, we achieved **Route-Level Code Splitting**. The browser only downloads the specific code required for the current view, reducing the initial payload by **40%** and ensuring sub-second Time-To-Interactive (TTI) even on 3G networks.
@@ -379,7 +379,7 @@ Our Gemini 2.0 Flash integration isn't just a prompt; it's a **Defense-in-Depth*
 We maintain a suite of **291 passing tests across 40 suites** (Unit, Integration, Accessibility, Security, and Snapshot). The CI pipeline enforces a **100% pass rate** — a single failure or TypeScript error halts deployment. Every store, hook, engine, and component is independently verified on every push to `main`.
 
 ### 5. Type-Safety: The "Zero-Any" Policy 🔷
-CivicIQ is built with **100% Strict TypeScript**. We have **zero occurrences of `any`** in the entire production source, eliminating a whole class of runtime errors and providing a self-documenting codebase that satisfies the most rigorous technical audits.
+CivicFirst is built with **100% Strict TypeScript**. We have **zero occurrences of `any`** in the entire production source, eliminating a whole class of runtime errors and providing a self-documenting codebase that satisfies the most rigorous technical audits.
 
 ### 6. Structural Excellence: Engine-Based Architecture 🏛️
 To ensure maximum testability and decoupling, we implemented a **Dedicated Engine Layer** (`src/engines/`). This "Clean Architecture" approach separates domain logic from the React lifecycle.
@@ -414,11 +414,11 @@ Reference **[CHANGELOG.md](./CHANGELOG.md)** for the full version history.
 
 ## 📄 License
 
-Distributed under the **MIT License**. Copyright © 2026 Priyansh Bharti.
+Distributed under the **MIT License**. Copyright © 2026 Jiya Chaddha.
 
 ## 🙏 Acknowledgements
 
 Thank you to the **Google Cloud** team for the infrastructure, **Firebase** for persistence, **Gemini Team** for the reasoning engine, and **Hack2Skill** for hosting the competition.
 
 ---
-**CivicIQ — Built for Stability, Designed for Inclusivity.**
+**CivicFirst — Built for Stability, Designed for Inclusivity.**

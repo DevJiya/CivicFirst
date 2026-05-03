@@ -1,7 +1,7 @@
 # 🛡️ Security Policy & Implementation
 
 ## Security Philosophy: Defense in Depth
-CivicIQ implements a **Defense in Depth** strategy, applying security controls at every layer of the stack—from the network transport layer to AI input validation. Our goal is to ensure that even if one layer is compromised, the platform remains resilient and user data remains protected.
+CivicFirst implements a **Defense in Depth** strategy, applying security controls at every layer of the stack—from the network transport layer to AI input validation. Our goal is to ensure that even if one layer is compromised, the platform remains resilient and user data remains protected.
 
 ---
 
@@ -101,8 +101,8 @@ The `SecurityEngine` provides heuristic behavioral monitoring:
 ---
 
 ## 🚨 7. Responsible Disclosure
-Security is a continuous journey. If you discover a vulnerability, please report it to `security@civiciq.app`. We are committed to acknowledging and resolving all valid reports within 48 hours.
+Security is a continuous journey. If you discover a vulnerability, please report it to `security@civicfirst.app`. We are committed to acknowledging and resolving all valid reports within 48 hours.
 
 ---
 
-**CivicIQ implements security at every layer of the stack—from HTTP headers to AI input validation—making it resistant to the OWASP Top 10 threats.**
+**CivicFirst implements security at every layer of the stack—from HTTP headers to AI input validation—making it resistant to the OWASP Top 10 threats.**

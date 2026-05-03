@@ -1,11 +1,11 @@
 # 🚀 Deployment Guide
 
-CivicIQ is designed for zero-friction deployment. From a fresh clone to a live, scalable production instance on Google Cloud, the process takes less than 30 minutes.
+CivicFirst is designed for zero-friction deployment. From a fresh clone to a live, scalable production instance on Google Cloud, the process takes less than 30 minutes.
 
 ---
 
 ## 💻 1. Local Development
-1.  **Clone**: `git clone https://github.com/Priyansh-Bharti/CivicIQ.git`
+1.  **Clone**: `git clone https://github.com/DevJiya/CivicFirst.git`
 2.  **Install**: `npm install`
 3.  **Environment**: Create `.env` from `.env.example`.
 4.  **Run**: `npm run dev`
@@ -17,12 +17,12 @@ We use a multi-stage Docker build to ensure a minimal footprint and maximum secu
 
 **Build Image**:
 ```bash
-docker build -t civiciq .
+docker build -t civicfirst .
 ```
 
 **Run Locally**:
 ```bash
-docker run -p 8080:8080 civiciq
+docker run -p 8080:8080 civicfirst
 ```
 
 ---
@@ -37,13 +37,13 @@ Cloud Run provides the scalability and security needed for a national civic plat
 
 2.  **Submit to Cloud Build**:
     ```bash
-    gcloud builds submit --tag gcr.io/[PROJECT_ID]/civiciq
+    gcloud builds submit --tag gcr.io/[PROJECT_ID]/civicfirst
     ```
 
 3.  **Deploy to Run**:
     ```bash
-    gcloud run deploy civiciq \
-      --image gcr.io/[PROJECT_ID]/civiciq \
+    gcloud run deploy civicfirst \
+      --image gcr.io/[PROJECT_ID]/civicfirst \
       --platform managed \
       --region us-central1 \
       --allow-unauthenticated
@@ -75,4 +75,4 @@ View real-time performance metrics and system logs via the **Google Cloud Consol
 
 ---
 
-**CivicIQ is designed for zero-friction deployment—from a fresh clone to a live Cloud Run instance in under 30 minutes.**
+**CivicFirst is designed for zero-friction deployment—from a fresh clone to a live Cloud Run instance in under 30 minutes.**

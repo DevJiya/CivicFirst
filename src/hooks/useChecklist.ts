@@ -13,7 +13,7 @@ import { trackEvent } from '../lib/analytics';
 import { logger } from '../utils/logger';
 import { ChecklistItem } from '../types/election';
 
-const LOCAL_STORAGE_KEY = 'civiciq_checklist_progress';
+const LOCAL_STORAGE_KEY = 'civicfirst_checklist_progress';
 
 interface ChecklistHookResult {
   items: ChecklistItem[];
