@@ -23,13 +23,13 @@ exports[`Component Snapshots > Footer matches snapshot 1`] = `
             <span
               class="text-2xl font-hero font-bold"
             >
-              CivicIQ
+              CivicFirst
             </span>
           </div>
           <p
             class="text-white/60 max-w-md font-body"
           >
-            CivicIQ is an educational platform dedicated to making the democratic process accessible to every citizen.
+            CivicFirst is an educational platform dedicated to making the democratic process accessible to every citizen.
           </p>
         </div>
         <div
@@ -177,7 +177,7 @@ exports[`Component Snapshots > Navbar matches snapshot 1`] = `
           <span
             class="text-white font-hero text-xl font-bold tracking-tight"
           >
-            CivicIQ
+            CivicFirst
           </span>
         </a>
         <div
@@ -260,7 +260,7 @@ exports[`Component Snapshots > Navbar matches snapshot 1`] = `
                 d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
               />
             </svg>
-            nav.askCivicIQ
+            nav.askCivicFirst
           </button>
           <button
             class="border border-white text-white hover:bg-white/10 px-5 py-2 rounded-md font-medium transition-all focus:outline-none focus:ring-2 focus:ring-amber"
